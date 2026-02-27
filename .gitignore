@@ -1,0 +1,10 @@
+# Ignore large DuckDB database
+data/wald-kantone.duckdb
+
+# Quarto output folders
+_docs/
+.quarto/
+
+# R session files
+.Rhistory
+.RData
