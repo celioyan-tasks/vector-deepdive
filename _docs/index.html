@@ -227,7 +227,7 @@ All computations are performed in EPSG:2056 (LV95), so areas are in m².</p>
 <span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>})</span>
 <span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a><span class="fu">toc</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>sf forest share: 358.45 sec elapsed</code></pre>
+<pre><code>sf forest share: 235.64 sec elapsed</code></pre>
 </div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>wald_share_sf <span class="ot">&lt;-</span> <span class="fu">bind_rows</span>(forest_area_by_canton) <span class="sc">|&gt;</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">wald_share =</span> wald_area <span class="sc">/</span> canton_area) <span class="sc">|&gt;</span></span>
@@ -369,7 +369,7 @@ All computations are performed in EPSG:2056 (LV95), so areas are in m².</p>
 <span id="cb19-31"><a href="#cb19-31" aria-hidden="true" tabindex="-1"></a>wald_share_duckdb <span class="ot">&lt;-</span> <span class="fu">dbGetQuery</span>(con, duckdb_sql)</span>
 <span id="cb19-32"><a href="#cb19-32" aria-hidden="true" tabindex="-1"></a><span class="fu">toc</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>DuckDB SQL forest share: 165.86 sec elapsed</code></pre>
+<pre><code>DuckDB SQL forest share: 124.76 sec elapsed</code></pre>
 </div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dbDisconnect</span>(con)</span>
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a></span>
