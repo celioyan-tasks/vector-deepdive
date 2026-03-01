@@ -1,8 +1,0 @@
----
-title: "Vector Deepdive"
----
-
-# Solution for Vector Deepdive
-
-This document contains my solutions for the Vector Deepdive assignment
-in the course *Spatiotemporal Datascience*.
